@@ -1,0 +1,91 @@
+<!-- HW4 Emoji Game -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Emoji Game</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header id="masthead">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Eric Schubert</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="https://bernardericschubert.github.io/Bootstrap-Portfolio/index.html">About</a>
+                    <a class="nav-item nav-link" href="https://bernardericschubert.github.io/Bootstrap-Portfolio/portfolio.html">Portfolio</a>
+                    <a class="nav-item nav-link" href="https://bernardericschubert.github.io/Bootstrap-Portfolio/contact.html">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>  
+    </header>
+
+    <br><br><br>
+
+    <div class="container bg-light body-container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Emoji Game</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12"><hr></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 instructions">
+                <p class="pItalic">Here is how this works:</p>
+                <p>You have 4 emojis to choose from below.  Each of these carries a random point value that will not be shown to you.  When you click it, the value will be added to the current score.</p>
+                <p>Your goal for this game is to choose emojis until you hit the target score. If you go over the total value, you lose.</p>
+                <p>Each time the game is reset (via win or loss), the value of the emojis will change.  Good luck!</p>
+            </div>
+            <div class="col-md-6">
+                <div class="rounded card">Target Score: <span id="totalScore"></span></div>
+                <div class="rounded card">Current Score: <span id="currentScore"></span></div>
+                <div class="container roundedEmoji card">
+                    <div class="row text-center">
+                        <div class="col-md-3">
+                            <img id="emoji1" src="assets/images/loudly-crying-face_1f62d.png">
+                        </div>
+                        <div class="col-md-3">
+                            <img id="emoji1" src="assets/images/rolling-on-the-floor-laughing_1f923.png">
+                        </div>
+                        <div class="col-md-3">
+                            <img id="emoji3" src="assets/images/serious-face-with-symbols-covering-mouth_1f92c.png">
+                        </div>
+                        <div class="col-md-3">
+                            <img id="emoji4" src="assets/images/smiling-face-with-heart-shaped-eyes_1f60d.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded card">
+                    Wins: <span id="wins"></span>
+                    Losses: <span id="losses"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="fixed-bottom">Copyright Eric Schubert 2019&copy;</div>
+    </footer>
+
+    <!-- Link JS file -->
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
