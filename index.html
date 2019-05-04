@@ -53,15 +53,15 @@
                 <p>Each time the game is reset (via win or loss), the value of the emojis will change.  Good luck!</p>
             </div>
             <div class="col-md-6">
-                <div class="rounded card">Target Score: <span id="totalScore"></span></div>
-                <div class="rounded card">Current Score: <span id="currentScore"></span></div>
+                <div class="rounded card" id="targetScore"></div>
+                <div class="rounded card" id="currentScore">Current Score:</div>
                 <div class="container roundedEmoji card">
                     <div class="row text-center">
                         <div class="col-md-3">
                             <img id="emoji1" src="assets/images/loudly-crying-face_1f62d.png">
                         </div>
                         <div class="col-md-3">
-                            <img id="emoji1" src="assets/images/rolling-on-the-floor-laughing_1f923.png">
+                            <img id="emoji2" src="assets/images/rolling-on-the-floor-laughing_1f923.png">
                         </div>
                         <div class="col-md-3">
                             <img id="emoji3" src="assets/images/serious-face-with-symbols-covering-mouth_1f92c.png">
@@ -72,8 +72,8 @@
                     </div>
                 </div>
                 <div class="rounded card">
-                    Wins: <span id="wins"></span>
-                    Losses: <span id="losses"></span>
+                    <div id="wins">Wins: </div>
+                    <div id="losses">Losses: </div>
                 </div>
             </div>
         </div>
