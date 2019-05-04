@@ -5,14 +5,14 @@ $(document).ready(function() {
     //Generate random target number between 120 and 19.
     //Math.floor(Math.random() * (max - min + 1)) + min;
     var targetNumber = Math.floor(Math.random() * 102) + 19;
-    console.log(targetNumber);
+    console.log("Target Number: " + targetNumber);
 
     //Generate random values for the emojis between 12 and 1
     var emoji1 = Math.floor(Math.random() * 12) + 1;
     var emoji2 = Math.floor(Math.random() * 12) + 1;
     var emoji3 = Math.floor(Math.random() * 12) + 1;
     var emoji4 = Math.floor(Math.random() * 12) + 1;
-    console.log(emoji1, emoji2, emoji3, emoji4);
+    console.log("Emoji values: " + emoji1, emoji2, emoji3, emoji4);
 
     //Show target number to player
     $("#targetScore").html("Target Number: " + targetNumber);
@@ -26,14 +26,14 @@ $(document).ready(function() {
     function init() {
         currentTotal = 0;
         targetNumber = Math.floor(Math.random() * 120) + 19;
-        console.log(targetNumber);
+        console.log("Target Number: " + targetNumber);
         $("#targetScore").html("Target Number: " + targetNumber);
         $("#currentScore").html("Current Score: " + currentTotal);
         emoji1 = Math.floor(Math.random() * 12) + 1;
         emoji2 = Math.floor(Math.random() * 12) + 1;
         emoji3 = Math.floor(Math.random() * 12) + 1;
         emoji4 = Math.floor(Math.random() * 12) + 1;
-        console.log(emoji1, emoji2, emoji3, emoji4);
+        console.log("Emoji values: " + emoji1, emoji2, emoji3, emoji4);
     }
 
     //Create function to calculate wins and losses
